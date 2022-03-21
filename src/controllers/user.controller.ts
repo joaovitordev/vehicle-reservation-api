@@ -17,6 +17,10 @@ export async function signIn(req: Request, res: Response): Promise<Response> {
     ],
   });
 
+  if (!userExists) {
+    return res.status(404).json({ error: "Email ou senha incorretos" });
+  }
+
   const match = await bcrypt.compare(user.password, userExists.password);
 
   if (!match) {
