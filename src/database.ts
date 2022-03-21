@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
 
 const port = `27017`
-const uri = `mongodb://localhost:${port}/joaobooking`;
+const database = 'joaobooking'
+const uri = `mongodb://localhost:${port}/${database}`;
 
 const options = {
     autoIndex: false,
