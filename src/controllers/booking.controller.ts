@@ -12,12 +12,11 @@ export async function booking(req: Request | any, res: Response): Promise<Respon
   }
 
   const userWithVehicle = await VehicleSchema.findOne({ "user._id": user._id });
-
   if (userWithVehicle) {
     return res.status(400).json({ error: "Usuário já reservou um veículo" });
   }
 
   await VehicleSchema.updateOne({ _id: vehicleId }, { user: user });
 
-  return res.json(await VehicleSchema.findById(vehicleId));
+  return res.status(200).json({ success: 'Reserva realizada' });
 }

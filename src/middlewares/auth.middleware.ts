@@ -2,11 +2,7 @@ import { Request, Response } from "express";
 
 import UserSchema from "../models/user";
 
-export const authMiddleware = async (
-  req: Request | any,
-  res: Response,
-  next: any
-) => {
+export const authMiddleware = async (req: Request | any, res: Response, next: any) => {
   const accessToken = req?.headers?.authorization;
 
   if (!accessToken) {
