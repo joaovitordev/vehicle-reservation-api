@@ -1,19 +1,3 @@
-// import { createPool } from 'mysql2/promise';
-
-// export async function connect() {
-
-//     const connection = await createPool({
-//         host: 'localhost',
-//         user: 'root',
-//         password: '191200',
-//         database: 'posts_test',
-//         connectionLimit: 10
-//     });
-    
-//     return connection;
-
-// }
-
 import mongoose from 'mongoose';
 
 const port = `27017`
