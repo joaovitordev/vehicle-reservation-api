@@ -1,13 +1,9 @@
 # vehicle-reservation-api
 
-Joaobooking api
+Projeto desenvolvido com NodeJs, TypeScript e MongoDB
 
-1. Instale as dependências necessárias
-npm install
+Instale as dependências necessárias com o `npm install`
 
-2. Ajuste o arquivo database.ts de acordo com o seu banco
+depois ajuste o arquivo database.ts de acordo com o seu banco
 
-3. Agora, inicie a API
-npm start
-
-O servidor estará disponível em http://localhost:3000
+e por último rode `npm run dev` o servidor estará disponível em http://localhost:3000
