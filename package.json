@@ -1,0 +1,37 @@
+{
+  "name": "api-vehicles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon src/index.ts --exec ts-node",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-vehicles": "node vehicles.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.7",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/morgan": "^1.9.3",
+    "@types/mysql2": "github:types/mysql2",
+    "@types/node": "^13.13.4",
+    "@types/uuid": "^8.3.4",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.10"
+  }
+}
